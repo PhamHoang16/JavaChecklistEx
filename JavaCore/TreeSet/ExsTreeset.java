@@ -1,10 +1,23 @@
 package TreeSet;
 
+import java.util.HashSet;
 import java.util.Iterator;
+import java.util.Set;
 import java.util.TreeSet;
 
 public class ExsTreeset {
     public static void main(String[] args) {
+        String[] students = {"hoang", "trang", "minh", "khanh", "hoang"};
+        Set<String> studentSet = new TreeSet<>();
+        Set<String> studentSet2 = new HashSet<>();
+        for (String student : students) {
+            System.out.print(student+",");
+            studentSet.add(student);
+            studentSet2.add(student);
+        }
+        System.out.println(studentSet);
+        System.out.println(studentSet2);
+
         TreeSet<String> colors = new TreeSet<>();
 
         colors.add("Red");
