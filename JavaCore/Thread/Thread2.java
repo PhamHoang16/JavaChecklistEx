@@ -11,7 +11,6 @@ public class Thread2 implements Runnable {
 
     public Thread2(int[] arr) {
         this.arr = arr;
-
     }
 
     @Override
